@@ -24,6 +24,19 @@ public class Main {
           System.out.println("Pattern: " + pattern + " => " + output);
         }
 
+        String paragraph = """
+                Double, double toil and trouble;
+                Fire burn and caldron bubble.
+                Fillet of a fenny snake,
+                In the caldron boil and bake
+                Eye of newt and toe of frog,
+                Wool of bat and tongue of dog,
+                Adder's fork and blind-worm's sting,
+                Lizard's leg and howlet's wing,
+                For a charm of powerful trouble,
+                Like a hell-broth boil and bubble.
+                """;
+
     }
 
     private static String format(String regexp, String... args){
