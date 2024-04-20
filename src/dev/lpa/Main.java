@@ -24,6 +24,8 @@ public class Main {
           System.out.println("Pattern: " + pattern + " => " + output);
         }
 
+        System.out.println("-------------------");
+
         String paragraph = """
                 Double, double toil and trouble;
                 Fire burn and caldron bubble.
@@ -37,6 +39,14 @@ public class Main {
                 Like a hell-broth boil and bubble.
                 """;
 
+        // Splitting by new line characters
+        String[] lines = paragraph.split("\\R");
+        System.out.println("This paragraph has " + lines.length + " lines");
+        // count whitespace
+        // \s is whitespace including new lines and spaces
+        String[] words = paragraph.split("\\s");
+        System.out.println("This paragraph has " + words.length + " words");
+        System.out.println(paragraph.replaceAll("[a-zA-z]+ble", "[GRUB]"));
     }
 
     private static String format(String regexp, String... args){
